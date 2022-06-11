@@ -19,13 +19,13 @@ class receptarDatos : AppCompatActivity() {
         val rdbFemenino=findViewById<RadioButton>(R.id.rdbFemenino)
         val txtTelefono=findViewById<TextView>(R.id.txtTelefono)
         val txtFecha=findViewById<TextView>(R.id.txtFechaNacimiento)
-        txtnombre.setText(bundle?.getString("Nombre"))
         if (bundle != null) {
+            txtnombre.setText(bundle.getString("Nombre"))
             rdbMasculino.isChecked=bundle.getBoolean("masculino")
             rdbFemenino.isChecked=bundle.getBoolean("femenino")
+            txtTelefono.setText(bundle.getString("telefono"))
+            txtFecha.setText(bundle.getString("date"))
         }
-        txtTelefono.setText(bundle?.getString("telefono"))
-        txtFecha.setText(bundle?.getString("date"))
         txtnombre.isEnabled=false
         rdbFemenino.isEnabled=false
         rdbMasculino.isEnabled=false
