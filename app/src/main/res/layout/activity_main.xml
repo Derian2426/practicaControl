@@ -126,6 +126,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="147dp"
         android:layout_marginBottom="158dp"
+        android:onClick="enviarDatos"
         android:text="Enviar"
         tools:text="Enviar" />
 </RelativeLayout>

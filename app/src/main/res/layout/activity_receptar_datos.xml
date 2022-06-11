@@ -126,6 +126,7 @@
         android:layout_marginEnd="147dp"
         android:layout_marginBottom="158dp"
         android:text="Regresar"
+        android:onClick="inicio"
         tools:text="Regresar" />
 
 </RelativeLayout>
